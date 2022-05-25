@@ -1,0 +1,10 @@
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.not-found-page{
+    background-color: #f2f2f2;
+}

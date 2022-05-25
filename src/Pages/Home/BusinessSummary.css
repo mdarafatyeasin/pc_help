@@ -1,0 +1,17 @@
+.card-summary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsive Part */
+@media only screen and (max-width: 600px) {
+    .card-summary{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }    
+  }

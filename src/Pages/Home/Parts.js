@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Parts = () => {
-    const { Parts, setParts } = useState()
+    const [ Parts, setParts ] = useState()
     return (
         <div>
 
