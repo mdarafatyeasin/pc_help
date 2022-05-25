@@ -1,0 +1,29 @@
+[
+    {
+      "_id": 0,
+      "picture": "https://images10.newegg.com/NeweggImage/ProductImage/19-117-795-S05.jpg",
+      "name": "CPUs / Processors",
+      "minimum_quantity": 100,
+      "price": 500,
+      "available_quantity": 1000,
+      "descripton": "Intel CPUs, AMD CPUs, Top Sellers"
+    },
+    {
+      "_id": 1,
+      "picture": "https://images10.newegg.com/ProductImage/13-132-568-03.jpg",
+      "name": "Motherboards",
+      "minimum_quantity": 100,
+      "price": 700,
+      "available_quantity": 1000,
+      "descripton": "Intel CPUs, AMD CPUs, Top Sellers"
+    },
+    {
+      "_id": 2,
+      "picture": "https://images10.newegg.com/ProductImage/20-231-920-01.jpg",
+      "name": "Memory (PC RAM)",
+      "minimum_quantity": 100,
+      "price": 400,
+      "available_quantity": 1000,
+      "descripton": "Intel CPUs, AMD CPUs, Top Sellers"
+    }
+  ]
