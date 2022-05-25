@@ -6,7 +6,7 @@
       "minimum_quantity": 100,
       "price": 500,
       "available_quantity": 1000,
-      "descripton": "Intel CPUs, AMD CPUs, Top Sellers"
+      "description": "Intel CPUs, AMD CPUs, Top Sellers"
     },
     {
       "_id": 1,
@@ -15,7 +15,7 @@
       "minimum_quantity": 100,
       "price": 700,
       "available_quantity": 1000,
-      "descripton": "Intel CPUs, AMD CPUs, Top Sellers"
+      "description": "Intel CPUs, AMD CPUs, Top Sellers"
     },
     {
       "_id": 2,
@@ -24,6 +24,15 @@
       "minimum_quantity": 100,
       "price": 400,
       "available_quantity": 1000,
-      "descripton": "Intel CPUs, AMD CPUs, Top Sellers"
+      "description": "Intel CPUs, AMD CPUs, Top Sellers"
+    },
+    {
+      "_id": 2,
+      "picture": "https://images10.newegg.com/ProductImage/20-231-920-01.jpg",
+      "name": "Memory (PC RAM)",
+      "minimum_quantity": 100,
+      "price": 400,
+      "available_quantity": 1000,
+      "description": "Intel CPUs, AMD CPUs, Top Sellers"
     }
   ]
