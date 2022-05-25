@@ -10,7 +10,7 @@ const SinglePart = ({ part }) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
-                <figure><img src={part.picture} alt="Shoes" /></figure>
+                <figure><img className='w-[300px]' src={part.picture} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{part.name}</h2>
                     <p>{part.description}</p>
