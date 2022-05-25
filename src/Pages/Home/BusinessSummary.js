@@ -6,7 +6,7 @@ import img3 from '../../assets/img3.png'
 
 const BusinessSummary = () => {
     return (
-        <div className='w-5/6 m-auto'>
+        <div className='w-5/6 ml-auto mr-auto mb-24 mt-32'>
             <h1 className='mt-12 text-center text-6xl font-bold text-primary'>MILLIONS BUSINESS TRUST US</h1>
             <p className='text-center text-2xl font-bold'>TRY TO UNDERSTWAND USERS EXPECTATION</p>
             <div className='card-summary mb-5'>
