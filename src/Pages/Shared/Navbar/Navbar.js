@@ -13,26 +13,35 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
-        <li>{user && <h1 className='text-primary'>{user.displayName}</h1>}</li>
+        <li><Link to="/portfolio">My Portfolio</Link></li>
+        <li>{user && <Link to="/dashboard">Dashboard</Link>}</li>
         <li>{user ? <button onClick={logout} className="btn btn-ghost">Log Out</button> : <Link to={'/login'}><h1>Login</h1></Link>}</li>
+        <li>{user && <h1 className='text-primary'>{user.displayName}</h1>}</li>
     </>
     return (
-        <div className="navbar bg-base-100 w-5/6 m-auto">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <label tabIndex="0" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <div className='bg-secondary'>
+            <div className="navbar bg-secondary w-5/6 m-auto">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <label tabIndex="0" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            {menuItems}
+                        </ul>
+                    </div>
+                    <a className="btn btn-ghost normal-case text-xl">PC Help</a>
+                </div>
+                <div className="navbar-end hidden lg:flex">
+                    <ul className="menu menu-horizontal p-0">
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">PC Help</a>
-            </div>
-            <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal p-0">
-                    {menuItems}
-                </ul>
+                <div>
+                    <label for="dashboard-sidebar" tabIndex="1" className="btn btn-ghost lg:hidden ml-[200%]">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                </div>
             </div>
         </div>
     );

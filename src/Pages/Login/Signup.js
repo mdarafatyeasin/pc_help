@@ -136,7 +136,7 @@ const Signup = () => {
                     </form>
 
                     {/* -------------------------------------------------------------------------- */}
-                    <p><small>New to Doctors Portal? <Link className='text-secondary' to='/login'>Login</Link> </small></p>
+                    <p><small>New to Doctors Portal? <Link className='text-primary' to='/login'>Login</Link> </small></p>
                     <div className="divider">OR</div>
                     {signinError}
                     <button
