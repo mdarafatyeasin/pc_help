@@ -16,6 +16,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import InputReview from './Pages/Dashboard/InputReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import AllUsers from './Pages/Dashboard/AllUsers';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path='review' element={<InputReview></InputReview>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='allUsers' element={<AllUsers></AllUsers>}></Route>
         </Route>
       </Routes>
       <ToastContainer />

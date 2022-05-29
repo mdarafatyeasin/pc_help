@@ -31,6 +31,7 @@ const MyOrder = () => {
                             <th>Img</th>
                             <th>Parts Name</th>
                             <th>Quantity</th>
+                            <th>Quantity</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -42,7 +43,10 @@ const MyOrder = () => {
                                     <td><img className='w-14' src={order.img} alt="" /></td>
                                     <td>{order.partName}</td>
                                     <td>{order.quantity}</td>
-                                    <td></td>
+                                    <td className='text-center'>
+                                        <button class="btn-success rounded-full btn-xs">Pay Now</button>
+                                        <button class="btn-error ml-5 rounded-full btn-xs">Cancel</button>
+                                    </td>
                                 </tr>)
                         }
 
