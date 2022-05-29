@@ -4,7 +4,7 @@ const UserRow = ({ user, index }) => {
     // console.log(user)
     const {email} = user;
     const makeAdmin = () =>{
-        fetch(`http://localhost:5000/users/admin/${email}`)
+        fetch(`https://guarded-fjord-57826.herokuapp.com/users/admin/${email}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)

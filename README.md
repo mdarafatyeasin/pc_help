@@ -1,3 +1,3 @@
 ### PC Help
-## Live Side : 
-* It has blog page 
+## Live Side : (https://pc-help-8cf54.web.app/home)
+* It has blog page  

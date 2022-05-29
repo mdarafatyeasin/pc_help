@@ -13,7 +13,7 @@ const Purchase = () => {
     const { _id, name, description, picture, price, available_quantity, minimum_quantity } = part;
 
     useEffect(() => {
-        const url = `http://localhost:5000/parts/${purchaseId}`;
+        const url = `https://guarded-fjord-57826.herokuapp.com/parts/${purchaseId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setPart(data))
@@ -34,7 +34,7 @@ const Purchase = () => {
             address: event.target.address.value,
             quantity: event.target.quantity.value
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://guarded-fjord-57826.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

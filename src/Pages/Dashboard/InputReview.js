@@ -17,7 +17,7 @@ const InputReview = () => {
             opinion: data.opinion,
             rating: data.rating
         }
-        fetch('http://localhost:5000/review', {
+        fetch('https://guarded-fjord-57826.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
