@@ -3,7 +3,7 @@ import "./Blog.css"
 
 const Blog = () => {
     return (
-        <div className='blog-section'>
+        <div className='blog-section pb-10'>
             <div className="first-question">
                 <h2 className='font-bold text-3xl'>
                     1.What is the difference between javascript and nodejs?
@@ -16,37 +16,19 @@ const Blog = () => {
                     <li>Lazy loading images in React.</li>
                 </ul>
             </div> <br /><br />
-            <div className="second-question">
-                <h2>
-                    2.What are the differences between sql and nosql databases?
+            <div className="first-question">
+                <h2 className='font-bold text-3xl'>
+                    2.What are the different ways to manage a state in a React application?
                 </h2>
-                <table>
-                    <tr>
-                        <th>SQL</th>
-                        <th>NoSQL</th>
-                    </tr>
-                    <tr>
-                        <td>These databases have fixed or static or predefined schema</td>
-                        <td>They have dynamic schema</td>
-                    </tr>
-                    <tr>
-                        <td>These databases are not suited for hierarchical data storage.</td>
-                        <td>These databases are best suited for hierarchical data storage.</td>
-
-                    </tr>
-                    <tr>
-                        <td>These databases are best suited for complex queries</td>
-                        <td>These databases are not so good for complex queries</td>
-
-                    </tr>
-                    <tr>
-                        <td>Vertically Scalable</td>
-                        <td>Horizontally scalable</td>
-
-                    </tr>
-                </table>
-                <br />
-            </div>
+                <p>There are four main types of state you need to properly manage in your React apps:</p>
+                <ul className="list-disc marker:text ml-20">
+                    <li>Local state.</li>
+                    <li>Global state.</li>
+                    <li>Server state.</li>
+                    <li>URL state.</li>
+                </ul>
+            </div> <br /><br />
+            
             <div className="third-question">
                 <h2 className='font-bold text-3xl'>
                     3.How does prototypical inheritance work?

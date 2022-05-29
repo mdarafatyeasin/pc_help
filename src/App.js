@@ -17,6 +17,7 @@ import MyOrder from './Pages/Dashboard/MyOrder';
 import InputReview from './Pages/Dashboard/InputReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AllUsers from './Pages/Dashboard/AllUsers';
+import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         </Route>
       </Routes>
       <ToastContainer />
+      <Footer></Footer>
     </div>
   );
 }
