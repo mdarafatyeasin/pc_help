@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfil
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
+import useToken from '../../Hooks/useToken';
 
 const Signup = () => {
         // google 
@@ -23,6 +24,9 @@ const Signup = () => {
         // react form
         const { register, formState: { errors }, handleSubmit } = useForm();
 
+        // token
+        const [token] =useToken(gUser || user)
+
         let signinError;
         const navigate = useNavigate();
     
@@ -34,17 +38,18 @@ const Signup = () => {
             return <Loading></Loading>;
         }
     
-        if (gUser || user) {
-            console.log(gUser, user);
+        if (token) {
+            // console.log(gUser, user);
+            navigate('/purchase')
         };
     
-        const onSubmit =async data => {
+        const onSubmit = async data => {
             await createUserWithEmailAndPassword(data.email, data.password);
             signInWithGoogle(data.email, data.password);
             await updateProfile({ displayName: data.name });
-            navigate('/purchase')
+            
     
-            console.log(data);
+            // console.log(data);
         };
     return (
         <div className='flex mt-5 justify-center item-center'>
