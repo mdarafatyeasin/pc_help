@@ -17,7 +17,7 @@ const AllUsers = () => {
                     {/* <!-- head --> */}
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>SL</th>
                             <th>Email</th>
                             <th>Job</th>
                         </tr>

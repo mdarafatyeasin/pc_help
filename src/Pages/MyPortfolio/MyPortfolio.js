@@ -14,6 +14,17 @@ const MyPortfolio = () => {
                 <div class="card-body">
                     <h2 class="card-title text-3xl mb-4"><u>Personal Information</u></h2>
                     <p><strong className='p-2'>Email:</strong>yeasinarafat54239@gmail.com</p>
+                    <p><strong className='p-2'>Educational Background:</strong>BA Honours in Bangla</p>
+                    <p><strong className='p-2'>Institute:</strong>Gov. City College (NU)</p>
+                    <p><strong className='p-2'>List of technologies:</strong>React.js, JavaScript, HTML, CSS, Bootstrap,Node.js, Express.js, MongoDB,Git, Github, Gitlab, VS Code, Chrome Dev Tool,
+                        Firebase, Heroku, Figma.</p>
+                        <p><strong className='p-2'>My Live website</strong></p>
+                    <div className='pl-10'>
+                        <p><strong className='p-2'>live website links 1: </strong> https://peaceful-smakager-c89cce.netlify.app</p>
+                        <p><strong className='p-2'>live website links 2: </strong> https://deft-blancmange-bd9dc8.netlify.app</p>
+                        <p><strong className='p-2'>live website links 3: </strong> https://ultimate-wild.web.app</p>
+                    </div>
+
                 </div>
             </div>
         </div>
