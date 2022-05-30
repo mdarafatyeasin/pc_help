@@ -4,7 +4,7 @@ import auth from '../../firebase.init';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
-    console.log(user)
+    // console.log(user)
     return (
         <div className=' w-5/6 m-auto mb-20'>
             <div class="avatar flex justify-center mt-20">

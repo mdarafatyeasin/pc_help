@@ -3,6 +3,7 @@ import './BusinessSummary.css'
 import img from '../../assets/img1.png'
 import img2 from '../../assets/img2.png'
 import img3 from '../../assets/img3.png'
+import img4 from '../../assets/img4.png'
 
 const BusinessSummary = () => {
     return (
@@ -40,7 +41,7 @@ const BusinessSummary = () => {
                 </div>
                 <div>
                     <div className="img flex item-center justify-center mt-10">
-                        <img className='w-36' src={img} alt="" />
+                        <img className='w-36' src={img4} alt="" />
                     </div>
                     <div className="text text-center">
                         <h1 className='text-5xl font-bold'>400+</h1>

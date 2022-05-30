@@ -5,7 +5,7 @@ import auth from '../../firebase.init';
 const MyOrder = () => {
     const [orders, setOrders] = useState([])
     const [user] = useAuthState(auth)
-    console.log(orders)
+    // console.log(orders)
 
     useEffect(() => {
         if (user) {

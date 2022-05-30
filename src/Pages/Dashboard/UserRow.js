@@ -5,7 +5,7 @@ const UserRow = ({ user, index }) => {
     // console.log(user)
     const {email, role} = user;
     const makeAdmin = () =>{
-        fetch(`http://localhost:5000/users/admin/${email}`,{
+        fetch(`https://guarded-fjord-57826.herokuapp.com/users/admin/${email}`,{
             method: "PUT",
             headers:{
                 "content-type":"application/json",

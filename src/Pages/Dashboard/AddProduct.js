@@ -20,7 +20,7 @@ const AddProduct = () => {
             available_quantity: data.available_quantity,
             picture: data.picture
         }
-        fetch('http://localhost:5000/parts', {
+        fetch('https://guarded-fjord-57826.herokuapp.com/parts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -29,7 +29,7 @@ const AddProduct = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 toast.success('Parts added successfully')
             })
     }

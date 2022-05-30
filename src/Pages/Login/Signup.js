@@ -41,7 +41,7 @@ const Signup = () => {
         if (token) {
             // console.log(gUser, user);
             
-            navigate('/purchase')
+            navigate('/home')
         };
     
         const onSubmit = async data => {
