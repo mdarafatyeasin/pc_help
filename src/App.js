@@ -18,6 +18,10 @@ import InputReview from './Pages/Dashboard/InputReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AllUsers from './Pages/Dashboard/AllUsers';
 import Footer from './Pages/Shared/Footer';
+import RequairAdmin from './Pages/Login/RequireAdmin';
+import ManageProducts from './Pages/Dashboard/ManageProducts';
+import AddProduct from './Pages/Dashboard/AddProduct'
+import Shop from './Pages/Shop/Shop';
 
 function App() {
   return (
@@ -26,6 +30,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/shop' element={<RequairAuth><Shop></Shop></RequairAuth>}></Route>
         <Route path='/blogs' element={<Blog></Blog>}></Route>
         <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
@@ -36,7 +41,9 @@ function App() {
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path='review' element={<InputReview></InputReview>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
-          <Route path='allUsers' element={<AllUsers></AllUsers>}></Route>
+          <Route path='allUsers' element={<RequairAdmin><AllUsers></AllUsers></RequairAdmin>}></Route>
+          <Route path='manageProducts' element={<RequairAdmin><ManageProducts></ManageProducts></RequairAdmin>}></Route>
+          <Route path='addProduct' element={<RequairAdmin><AddProduct></AddProduct></RequairAdmin>}></Route>
         </Route>
       </Routes>
       <ToastContainer />

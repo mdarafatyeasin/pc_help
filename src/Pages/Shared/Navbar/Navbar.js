@@ -13,8 +13,9 @@ const Navbar = () => {
     };
     const menuItems = <>
         <li><Link to="/home">Home</Link></li>
+        <li><Link to="/shop">Shop</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
-        <li><Link to="/portfolio">My Portfolio</Link></li>
+        <li><Link to="/portfolio">Portfolio</Link></li>
         <li>{user && <Link to="/dashboard">Dashboard</Link>}</li>
         <li>{user ? <button onClick={logout} className="btn btn-ghost">Log Out</button> : <Link to={'/login'}><h1>Login</h1></Link>}</li>
         <li>{user && <h1 className='text-primary'>{user.displayName}</h1>}</li>
