@@ -120,7 +120,7 @@ const Login = () => {
                         </form>
 
                         {/* -------------------------------------------------------------------------- */}
-                        <p><small>New to Doctors Portal? <Link className='text-primary' to='/signup'>create a new account</Link> </small></p>
+                        <p><small>New to PC help? <Link className='text-primary' to='/signup'>create a new account</Link> </small></p>
                         <div className="divider">OR</div>
                         {signinError}
                         <button
