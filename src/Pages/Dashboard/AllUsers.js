@@ -19,7 +19,8 @@ const AllUsers = () => {
                         <tr>
                             <th>SL</th>
                             <th>Email</th>
-                            <th>Job</th>
+                            <th>Admin</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
